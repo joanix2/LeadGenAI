@@ -1,0 +1,21 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Landing Page</h1>
+    <form action="{{ url_for('submit_form') }}" method="POST">
+        <label for="question">Question:</label><br>
+        <input type="text" id="question" name="question"><br>
+        <label for="answers">Answers (comma separated):</label><br>
+        <input type="text" id="answers" name="answers"><br>
+        <label for="multiple">Multiple:</label><br>
+        <input type="checkbox" id="multiple" name="multiple" value="true"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
